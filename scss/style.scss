@@ -1,0 +1,184 @@
+$green-gradient: linear-gradient(#3cf166, #17de24);
+$orange-gradient: linear-gradient(#f5e144, #ffa30f);
+$red-gradient: linear-gradient(#fa2020, #ef0049);
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop-sm {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-md {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xl {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xxl {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-h($breakpoint) {
+  @if $breakpoint == height-sm {
+    @media (max-height: 600px) {
+      @content;
+    }
+  }
+}
+
+@font-face {
+  font-family: HKGrotesk-Bold;
+  src: url("../fonts/HKGrotesk-Bold.otf") format("opentype");
+}
+
+html {
+  font-size: 62.5%;
+  //font-size: 68%;
+  @include respond(desktop-xl) {
+    font-size: 58%;
+  }
+
+  @include respond(desktop-md) {
+    font-size: 53%;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  // font-family: 'Lato', sans-serif;
+  // font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4.3rem 4.8rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3d3f43;
+  & .company {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  & .help {
+    font-size: 1.5rem;
+    margin: 0;
+
+    & i {
+      margin-left: .5rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 6rem;
+  width: 45rem;
+  height: 63rem;
+  background-color: #FFF;
+  border: solid 2px #d9d9d9;
+  border-radius: 1.2rem;
+
+  &-header {
+    height: 45px;
+    margin-top: 9rem;
+    margin-bottom: 5.4rem;
+    font-family: 'Questrial', sans-serif;
+    font-size: 36px;
+    color: #183b56;
+  }
+
+  & #password,
+    #email {
+    padding: 1.7rem 2rem;
+    margin-bottom: 2.3rem;
+    width: 100%;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #183b56;;
+    border-radius: 8px;
+    border: solid 1.3px #c3cad9;
+    background-color: #ffffff;
+
+    &::placeholder {
+      color: #959ead;
+      
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #1565d8;
+    }
+  }
+
+  & label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a7184;
+  }
+
+  .check {
+    margin-bottom: 2.2rem;
+    & input {
+      margin-right: 1rem;
+    }
+    & label {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #5a7184;
+    }
+
+    & a {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1565d8;
+    }
+  }
+
+  & .btn-custom-signin {
+    height: 56px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 8px;
+    background-color: #1565d8;
+  }
+
+  .dont-have {
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #5a7184;
+
+    & a {
+      margin-left: 1rem;
+      font-weight: 700;
+    }
+  }
+}
+

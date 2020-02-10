@@ -1,0 +1,106 @@
+@font-face {
+  font-family: HKGrotesk-Bold;
+  src: url("../fonts/HKGrotesk-Bold.otf") format("opentype"); }
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1500px) {
+    html {
+      font-size: 58%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 53%; } }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4.3rem 4.8rem; }
+
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3d3f43; }
+  .header .company {
+    font-size: 2rem;
+    margin: 0; }
+  .header .help {
+    font-size: 1.5rem;
+    margin: 0; }
+    .header .help i {
+      margin-left: .5rem;
+      font-size: 2.5rem; }
+
+.signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 6rem;
+  width: 45rem;
+  height: 63rem;
+  background-color: #FFF;
+  border: solid 2px #d9d9d9;
+  border-radius: 1.2rem; }
+  .signin-header {
+    height: 45px;
+    margin-top: 9rem;
+    margin-bottom: 5.4rem;
+    font-family: 'Questrial', sans-serif;
+    font-size: 36px;
+    color: #183b56; }
+  .signin #password,
+  .signin #email {
+    padding: 1.7rem 2rem;
+    margin-bottom: 2.3rem;
+    width: 100%;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #183b56;
+    border-radius: 8px;
+    border: solid 1.3px #c3cad9;
+    background-color: #ffffff; }
+    .signin #password::placeholder,
+    .signin #email::placeholder {
+      color: #959ead; }
+    .signin #password:focus,
+    .signin #email:focus {
+      outline: none;
+      border-color: #1565d8; }
+  .signin label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a7184; }
+  .signin .check {
+    margin-bottom: 2.2rem; }
+    .signin .check input {
+      margin-right: 1rem; }
+    .signin .check label {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #5a7184; }
+    .signin .check a {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1565d8; }
+  .signin .btn-custom-signin {
+    height: 56px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 8px;
+    background-color: #1565d8; }
+  .signin .dont-have {
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #5a7184; }
+    .signin .dont-have a {
+      margin-left: 1rem;
+      font-weight: 700; }
