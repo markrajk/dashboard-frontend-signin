@@ -57,8 +57,8 @@ body {
     height: 45px;
     margin-top: 9rem;
     margin-bottom: 4.4rem;
-    font-family: 'Questrial', sans-serif;
     font-size: 3.6rem;
+    font-weight: 600;
     color: #183b56; }
   .signin #password,
   .signin #email {
