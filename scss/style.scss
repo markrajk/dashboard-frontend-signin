@@ -38,7 +38,7 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
     }
   }
   @if $breakpoint == height-sm {
-    @media (max-height: 600px) {
+    @media (max-height: 650px) {
       @content;
     }
   }
