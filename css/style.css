@@ -9,6 +9,12 @@ html {
   @media (max-width: 991px) {
     html {
       font-size: 53%; } }
+  @media (max-height: 800px) {
+    html {
+      font-size: 48%; } }
+  @media (max-height: 600px) {
+    html {
+      font-size: 40%; } }
 
 body {
   width: 100vw;

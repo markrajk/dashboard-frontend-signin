@@ -31,6 +31,12 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 }
 
 @mixin respond-h($breakpoint) {
+
+  @if $breakpoint == height-md {
+    @media (max-height: 800px) {
+      @content;
+    }
+  }
   @if $breakpoint == height-sm {
     @media (max-height: 600px) {
       @content;
@@ -52,6 +58,14 @@ html {
 
   @include respond(desktop-md) {
     font-size: 53%;
+  }
+
+  @include respond-h(height-md) {
+    font-size: 48%;
+  }
+
+  @include respond-h(height-sm) {
+    font-size: 40%;
   }
 }
 
@@ -102,6 +116,10 @@ body {
   background-color: #FFF;
   border: solid 2px #d9d9d9;
   border-radius: 1.2rem;
+
+  @include respond-h(height-sm) {
+
+  }
 
   &-header {
     height: 45px;
