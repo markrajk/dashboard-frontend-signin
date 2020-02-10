@@ -33,6 +33,7 @@ body {
     margin: 0; }
     .header .help i {
       margin-left: .5rem;
+      margin-top: -3px;
       font-size: 2.5rem; }
 
 .signin {
