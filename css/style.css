@@ -2,19 +2,19 @@
   font-family: HKGrotesk-Bold;
   src: url("../fonts/HKGrotesk-Bold.otf") format("opentype"); }
 html {
-  font-size: 62.5%; }
+  font-size: 55%; }
   @media (max-width: 1500px) {
     html {
-      font-size: 58%; } }
+      font-size: 53%; } }
   @media (max-width: 991px) {
     html {
-      font-size: 53%; } }
+      font-size: 51%; } }
   @media (max-height: 800px) {
     html {
-      font-size: 48%; } }
+      font-size: 43%; } }
   @media (max-height: 650px) {
     html {
-      font-size: 40%; } }
+      font-size: 38%; } }
 
 body {
   width: 100vw;
@@ -25,7 +25,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 4.3rem 4.8rem; }
+  padding: 43px 48px; }
 
 .header {
   font-size: 2rem;
@@ -58,7 +58,7 @@ body {
     margin-top: 9rem;
     margin-bottom: 4.4rem;
     font-family: 'Questrial', sans-serif;
-    font-size: 36px;
+    font-size: 3.6rem;
     color: #183b56; }
   .signin #password,
   .signin #email {
@@ -80,8 +80,9 @@ body {
       outline: none;
       border-color: #1565d8; }
   .signin label {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;
+    line-height: 1.33;
     color: #5a7184; }
   .signin .check {
     margin-bottom: 2.2rem; }
@@ -97,11 +98,13 @@ body {
       font-weight: 600;
       color: #1565d8; }
   .signin .btn-custom-signin {
-    height: 56px;
-    font-size: 1.8rem;
+    height: 5.6rem;
+    font-size: 2rem;
     font-weight: 700;
+    letter-spacing: .24px;
     color: #FFF;
     border-radius: 8px;
+    border: none;
     background-color: #1565d8; }
   .signin .dont-have {
     margin-top: 2.5rem;
